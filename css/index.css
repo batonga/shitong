@@ -1,0 +1,262 @@
+.jd_layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+/*头部模块开始*/
+.jd_header{
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    left: 0;
+    top: 0;
+    z-index:999;
+}
+.jd_header .jd_header_box{
+    min-width: 300px;
+    max-width: 640px;
+    height: 40px;
+    margin: 0 auto;
+    background: rgba(201,21,35,0);
+    position: relative;
+}
+.jd_header .jd_header_box .icon_logo{
+    position: absolute;
+    width: 60px;
+    height: 36px;
+    left: 10px;
+    top: 4px;
+    background-position: 0 -103px;
+}
+.jd_header .jd_header_box .login{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size:15px;
+    color:#fff;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+.jd_header .jd_header_box form{
+    width: 100%;
+    padding-left:75px;
+    padding-right: 55px;
+    position: relative;
+}
+.jd_header .jd_header_box form input{
+    width: 100%;
+    height: 30px;
+    border-radius:15px;
+    margin-top: 5px;
+    padding-left:30px;
+}
+.jd_header .jd_header_box form .icon_search{
+    background-position: -60px -109px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+/*头部模块结束*/
+/*banner begin*/
+.jd_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner ul:nth-child(1){
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+.jd_banner ul:nth-child(1) li{
+    width: 10%;
+    float: left;
+}
+.jd_banner ul:nth-child(1) li a{
+    width: 100%;
+    display: block;
+}
+.jd_banner ul:nth-child(1) li a img{
+    width: 100%;
+    display: block;
+}
+.jd_banner ul:nth-of-type(2){
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    margin-left:-59px;
+}
+.jd_banner ul:nth-of-type(2) li{
+    width: 6px;
+    height: 6px;
+    border:1px solid #fff;
+    border-radius:50%;
+    float: left;
+    margin-left:10px;
+}
+.jd_banner ul:nth-of-type(2) li.current{
+    background-color: #fff;
+}
+.jd_banner ul:nth-of-type(2) li:nth-child(1){
+    margin-left: 0;
+}
+/*banner end*/
+/*nav begin*/
+.jd_nav{
+    width: 100%;
+    padding:10px;
+    background-color: #fff;
+    border-bottom:1px solid #e0e0e0;
+}
+.jd_nav ul{
+    width: 100%;
+}
+.jd_nav ul li{
+    width: 25%;
+    float: left;
+}
+.jd_nav ul li a{
+    width: 100%;
+    display: block;
+}
+.jd_nav ul li a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.jd_nav ul li a p{
+    text-align: center;
+    padding: 6px 0;
+}
+/*nav end*/
+/*product begin*/
+/*商品区公共样式开始*/
+.product{
+    width: 100%;
+    padding: 0 5px;
+}
+.product_box{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top:10px;
+}
+.product_box .product_title{
+    width: 100%;
+    height: 32px;
+    border-bottom:1px solid #e0e0e0;
+    line-height: 32px;
+}
+.product_box .product_title h3{
+    position: relative;
+    margin-left:10px;
+    padding-left:7px;
+    font-weight: normal;
+}
+.product_box .product_title h3::before{
+    content:"";
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.product_box .product_title.no_border{
+    border:none;
+}
+.product_box .product_content{
+    min-height:100px;
+}
+/*商品区公共样式结束*/
+.product_box .product_title .sk_icon{
+    background: url("../images/seckill-icon.png");
+    width: 16px;
+    height: 20px;
+    background-size: 16px 20px;
+    float: left;
+    margin-top: 7px;
+    margin-left:10px;
+}
+.product_box .product_title .sk_name{
+    float: left;
+    color: #d8505c;
+    margin-left:10px;
+    font-size: 15px;
+}
+.product_box .product_title .sk_time{
+    float: left;
+    margin-left:10px;
+}
+.product_box .product_title .sk_time span{
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 8px;
+    margin-left: 3px;
+    text-align: center;
+    background: #333;
+    color:#fff;
+}
+.product_box .product_title .sk_time span:nth-of-type(3n){
+    width: 3px;
+    background: #fff;
+    color:#333;
+}
+.product_content{
+    text-align: center;
+    font-size: 12px;
+}
+.product_content ul{
+    padding:10px 0;
+}
+.product_content li{
+    float: left;
+    width: 33.333%;
+}
+.product_content li a{
+    width:100%;
+    display: block;
+    border-right:1px solid red;
+}
+.product_content li:last-child a{
+    border:none;
+}
+.product_content li a img{
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+.product_content li p:nth-of-type(1){
+    color: #f15353;
+    padding: 5px 0;
+}
+.product_content li p:nth-of-type(2){
+    text-decoration: line-through;
+}
+.w_50{
+    width: 50%;
+    display: block;
+}
+.w_50 img{
+    width: 100%;
+    display: block;
+}
+.b_right{
+    border-right:1px solid #e0e0e0;
+}
+.b_left{
+    border-left:1px solid #e0e0e0;
+}
+.b_bottom{
+    border-bottom:1px solid #e0e0e0;
+}
+/*product end*/

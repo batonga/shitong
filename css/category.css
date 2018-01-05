@@ -1,0 +1,71 @@
+html,body{
+    height: 100%;
+}
+/*分类主体部分*/
+.product_category{
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+}
+/*左侧栏部分*/
+.product_category .product_category_left{
+    width: 90px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.product_category .product_category_left li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.product_category .product_category_left li a{
+    display: block;
+}
+.product_category .product_category_left li.now{
+    background-color: #fff;
+    border-right:none;
+}
+.product_category .product_category_left li.now a{
+    color: #d8505c;
+}
+/*右侧栏部分*/
+.product_category_right{
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+.product_category_right .banner{
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+.product_category_right .banner img{
+    width: 100%;
+    display: block;
+}
+.product{
+    padding-left:10px;
+}
+.product h3{
+    font-size: 12px;
+    line-height: 30px;
+}
+.product li{
+    float: left;
+    width:33.33%;
+}
+.product li img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    display: block;
+}
+.product li p{
+    font-size:12px;
+    padding: 5px;
+    text-align: center;
+}

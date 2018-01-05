@@ -1,0 +1,104 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+body{
+    font-size: 14px;
+    color:#333;
+    font-family:"Microsoft YaHei", sans-serif;
+    background: #f5f5f5;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+a:hover{
+    color:#333;
+}
+input,textarea{
+    border:none;
+    outline:none;
+    resize: none;
+    -webkit-appearance:none;
+}
+/*common css 公用的css*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before{
+    content: ".";
+    display:block;
+    visibility: hidden;
+    height: 0;
+    clear:both;
+    line-height: 0;
+}
+.m_l10{
+    margin-left:10px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.m_t10{
+    margin-top:10px;
+ }
+.m_b10{
+    margin-bottom:10px;
+  }
+[class^="icon"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+/*header公共样式*/
+.category_header{
+    width: 100%;
+    height: 45px;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    border-bottom:1px solid #e0e0e0;
+    position: absolute;
+}
+.category_header a[class^="icon_"]{
+    width: 40px;
+    height: 44px;
+    padding: 10px 12px;
+    position: absolute;
+    top: 0;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.category_header .icon_back{
+    left: 0;
+    background-position: -20px 0;
+}
+.category_header .icon_menu{
+    right: 0;
+    background-position: -60px 0;
+}
+.category_header form{
+    width: 100%;
+    padding:0 40px;
+}
+.category_header input{
+    width: 100%;
+    height: 30px;
+    border:1px solid #e0e0e0;
+    margin-top:7px;
+    border-radius: 2px;
+}
+.category_header h3{
+    font-size: 16px;
+    text-align: center;
+    line-height: 44px;
+    font-weight:normal;
+}
